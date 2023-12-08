@@ -1,0 +1,170 @@
+{% if request.user.is_superuser %}
+<div class="py-5 mb-4 rounded bg-white">
+
+    <div class=" my-3 flex justify-between px-14 items-center">
+        <h3 class="text-gray-400">Users</h3>
+        <span>...</span>
+    </div>
+
+    <div class="relative overflow-x-auto p-6">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+            <thead class="text-xs text-gray-700 uppercase ">
+                <tr>
+
+                    <th scope="col" class="px-6 py-3">
+                        Account status
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Username
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        email
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="bg-white my-4 border border-black rounded-full overflow-x-hidden hover:bg-gray-50">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                        Microsoft Surface Pro
+                    </th>
+
+                    <td class="px-6 py-4">
+                        $1999
+                    </td>
+                    <td class="px-6 py-4">
+                        1.0 lb.
+                    </td>
+                    <td class="flex items-center px-6 py-4">
+                        <div class="flex justify-end px-4 pt-4">
+                            <button id="dropdownButton-1" data-dropdown-toggle="dropdown-1"
+                                class="inline-block text-gray-500 rounded-lg text-sm" type="button">
+                                <span class="sr-only">Open dropdown</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 16 3">
+                                    <path
+                                        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown-1"
+                                class="z-10 hidden text-base list-none bg-white text-center divide-y divide-gray-100 rounded-lg shadow w-44">
+                                <ul class="py-2" aria-labelledby="dropdownButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">View</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Block</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </td>
+                </tr>
+
+                <tr class="bg-white my-4 border border-black rounded-full overflow-x-hidden hover:bg-gray-50">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                        <span
+                            class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-3 py-1 rounded-full dark:bg-purple-900 dark:text-purple-300">Purple</span>
+                    </th>
+
+                    <td class="px-6 py-4 flex items-center gap-2">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                            alt="Rounded avatar">
+                        <p>John Doe</p>
+                    </td>
+                    <td class="px-6 py-4">
+                        youngestkid01@gmail.com
+                    </td>
+                    <td class="flex items-center px-6 py-4">
+                        <div class="flex justify-end px-4 pt-4">
+                            <button id="dropdownButton" data-dropdown-toggle="dropdown-2"
+                                class="inline-block text-gray-500 rounded-lg text-sm" type="button">
+                                <span class="sr-only">Open dropdown</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 16 3">
+                                    <path
+                                        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown-2"
+                                class="z-10 hidden text-base list-none bg-white text-center divide-y divide-gray-100 rounded-lg shadow w-44">
+                                <ul class="py-2" aria-labelledby="dropdownButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">View</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Block</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </td>
+                </tr>
+
+                <tr class="bg-white border border-black rounded-full overflow-x-hidden hover:bg-gray-50">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                        Microsoft Surface Pro
+                    </th>
+
+                    <td class="px-6 py-4">
+                        $1999
+                    </td>
+                    <td class="px-6 py-4">
+                        1.0 lb.
+                    </td>
+                    <td class="flex items-center px-6 py-4">
+                        <div class="flex justify-end px-4 pt-4">
+                            <button id="dropdownButton" data-dropdown-toggle="dropdown-3"
+                                class="inline-block text-gray-500 rounded-lg text-sm" type="button">
+                                <span class="sr-only">Open dropdown</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 16 3">
+                                    <path
+                                        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown-3"
+                                class="z-10 hidden text-base list-none bg-white text-center divide-y divide-gray-100 rounded-lg shadow w-44">
+                                <ul class="py-2" aria-labelledby="dropdownButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">View</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Block</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endif %}

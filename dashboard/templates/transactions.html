@@ -1,0 +1,124 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<div class="px-10 pt-20 pb-5 sm:ml-64 bg-purple-100">
+    <div class="h-6 w-6 py-10 flex items-center justify-between w-full">
+        <h3 class="text-gray-500 font-bold capitalize">Admin management cards</h3>
+        <div>
+            <h4 class="text-gray-500 font-bold capitalize">Account | User</h4>
+        </div>
+    </div>
+
+    <!-- add card section -->
+    <div class="flex items-center justify-between">
+        <h2 class="text-gray-500 font-bold">Payment</h2>
+
+        <div class="flex items-center justify-between gap-2">
+
+
+                <span>filter</span>
+
+        </div>
+    </div>
+
+    <div class=" relative rounded-lg bg-white p-10 mt-5">
+
+
+
+        <div class="relative overflow-x-auto p-5">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                <thead class="text-xs text-gray-700 uppercase ">
+                    <tr>
+
+                        <th scope="col" class="px-6 py-3">
+                            Payment ID
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Product
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Amount
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Date
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Status
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Email
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr
+                        class="bg-white my-4 border border-black rounded-full overflow-x-hidden hover:bg-gray-50">
+
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            123456
+                        </th>
+
+                        <td class="px-6 py-4">
+                            Amazon
+                        </td>
+                        <td class="px-6 py-4">
+                            #33,000
+                        </td>
+                        <td class="px-6 py-4">
+                            19/03/2023
+                        </td>
+                        <td class="px-6 py-4">
+                            <span
+                            class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-3 py-1 rounded-full dark:bg-purple-900 dark:text-purple-300">Purple</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            example@gmail.com
+                        </td>
+                        
+                        <td class="flex items-center px-6 py-4">
+                            <div class="flex justify-end px-4 pt-4">
+                                <button id="dropdownButton-1" data-dropdown-toggle="dropdown-1"
+                                    class="inline-block text-gray-500 rounded-lg text-sm" type="button">
+                                    <span class="sr-only">Open dropdown</span>
+                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 16 3">
+                                        <path
+                                            d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                    </svg>
+                                </button>
+                                <!-- Dropdown menu -->
+                                <div id="dropdown-1"
+                                    class="z-10 hidden text-base list-none bg-white text-center divide-y divide-gray-100 rounded-lg shadow w-44">
+                                    <ul class="py-2" aria-labelledby="dropdownButton">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Release</a>
+                                        </li>
+                      
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

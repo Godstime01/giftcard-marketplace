@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<section class="bg-white pt-20  bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')]">
+    <div class="py-8 px-4 bg-white rounded-lg shadow mx-auto max-w-sm text-gray-900 mx-auto lg:py-16 z-10 relative">
+
+        <h2 class="text-4xl text-center">Create account</h2>
+        <form class="space-y-4" action="">
+            {% csrf_token %}
+            {% for field in register_form %}
+            <div>
+                <label for="">{{field.label}}</label>
+                {{field}}
+            </div>
+            {% endfor %}
+            <button type="submit"
+                class="bg-gradient-to-b from-violet-800 to-fuchsia-800 px-5 py-2 text-white w-full rounded-lg">Create
+                account</button>
+
+        </form>
+        <p class="text-gray-900 text-center my-3">already have an account? <a href="{% url 'login' %}"
+                class="bg-transparent underline border-none font-bold" >Login here</a></p>
+
+    </div>
+    <div class="bg-gradient-to-b from-violet-800 to-fuchsia-800 w-full h-full absolute top-0 left-0 z-0"></div>
+</section>
+
+
+<!-- <form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">create account</button>
+</form> -->
+{% endblock %}

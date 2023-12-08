@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <h1>User Balance {{user}}</h1>
+        <p>Your balance is: ${{ request.user.calculate_commission }}</p>
+        <p>total number of referrals: {{request.user.get_total_number_of_referals}}</p>
+        
+        {% for r in user.get_refferals %}
+            <p>{{r.referred_user.username}}</p>
+        {% endfor %}
+{% endblock %}

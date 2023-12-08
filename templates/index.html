@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    
+
+<section class="bg-white  bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')]">
+    <div class="py-8 px-4 mx-auto max-w-full text-white mx-auto text-center lg:py-16 z-10 relative">
+
+        <h1 class="mb-4 mt-20 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl ">We provide easy solution to exchange your giftcards for money</h1>
+        <p class="mb-8 text-lg font-normal lg:text-xl sm:px-16 lg:px-48 ">Coinbase is a platform for trading your Giftcards at the best rate why not give us that trial .</p>
+
+      {% if request.user.is_authenticated %}
+      <button type="button" data-modal-target="register-modal" data-modal-toggle="register-modal"
+      class="text-white font-medium rounded-full text-sm px-10 py-5 text-center bg-gradient-to-b from-violet-500 to-fuchsia-500 hover:bg-gradient-to-b hover:from-violet-800 hover:to-fuchsia-800">Go to Dashboard</button>
+      {% else %}
+      <button type="button" data-modal-target="register-modal" data-modal-toggle="register-modal"
+      class="text-white font-medium rounded-full text-sm px-10 py-5 text-center bg-gradient-to-b from-violet-500 to-fuchsia-500 hover:bg-gradient-to-b hover:from-violet-800 hover:to-fuchsia-800">Get started</button>
+      {% endif %}
+
+    </div>
+    <div class="bg-gradient-to-b from-violet-800 to-fuchsia-800 w-full h-full absolute top-0 left-0 z-0"></div>
+</section>
+
+{% include './includes/modal.html' %}
+{% endblock %}
